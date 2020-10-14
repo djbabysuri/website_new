@@ -1,4 +1,4 @@
-# Querri Data & Analytics Website Updates
+# Queeri Data & Analytics Website Updates
 
 This is a  descriptive breakdown of the qD&A website update. The website is being transitioned from a Google sites template over to a custom design. These are the component parts as of 10/13/2020.
 
