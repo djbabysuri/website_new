@@ -116,6 +116,31 @@
       50% { border-color: #F9718D; }
     }
 
+/*Un-nested typeing effect*/
+    #typing-effect {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid #F9718D; /* The typwriter cursor */
+      white-space: wrap; /* Keeps the content wapped */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        display: left;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #F9718D; }
+    }
+
 
 
 /* Typewriter and erasing effec on us page*/
@@ -206,10 +231,82 @@ ul.b {
 
 
 
+/* Card flip on project page */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #26DDC8;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 
 
-
-
+/*Un-nested typeing effec for project tabt*/
+    #typing-effect-cards {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid #F9718D; /* The typwriter cursor */
+      white-space: wrap; /* Keeps the content wapped */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .01em; /* Adjust as needed */
+      font-family: courier;
+      font-size: 13px;
+      font-weight: bold;
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        display: left;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #F9718D; }
+    }
 
 
