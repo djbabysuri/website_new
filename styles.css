@@ -36,15 +36,51 @@
 
 
 .brandButtonOne
-{background-color: #26DDC8;
+{
+  font-weight: bold;
+  font-family: courier;
+  display: inline-block;
+  width: 150px;
+  margin:15;
+  padding: 15px;
+  border-radius: 12px;
+  background:  #26DDC8;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+
 } 
 
 .brandButtonTwo
-{background-color: #F9718D;
+{
+
+  font-weight: bold;
+  font-family: courier;
+  display: inline-block;
+  width: 150px;
+  margin:15;
+  padding: 15px;
+  border-radius: 12px;
+  background: #967DC4;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+
 } 
 
 
 
+
+
+
+
+
+
+
+
+/* Typewriter effect on intro page*/
 
  .top-block{
       background-image: linear-gradient(to right #b6c7c5, #26DDC8);
@@ -57,4 +93,123 @@
 
 
  
+    #typing-intro h4 {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid #F9718D; /* The typwriter cursor */
+      white-space: wrap; /* Keeps the content wapped */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #F9718D; }
+    }
+
+
+
+/* Typewriter and erasing effec on us page*/
+    
+    
+    .output {
+      text-align:center;
+     
+      color: #26DDC8;
+      
+    }
+
+    .output> p{
+      color: #967DC4;
+      font-weight: bold ;
+    }
+
+    
+    /* Cursor Styling */
+    
+    .cursor::after {
+      content:'';
+      display:inline-block;
+      margin-left:3px;
+      background-color:white;
+      animation-name:blink;
+      animation-duration:0.10s;
+      animation-iteration-count: infinite;
+    }
+    h1.cursor::after {
+      height:24px;
+      width:13px;
+    }
+    p.cursor::after {
+      height:13px;
+      width:6px;
+    
+    }
+    
+    @keyframes blink {
+      0% {
+        opacity:1;
+      }
+      49% {
+        opacity:1;
+      }
+      50% {
+        opacity:0;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+
+
+
+/*hide cards on page load. display after hover action */
+
+    #detail-cards{
+      display: none;
+      margin: 35px;
+    }
+
+
+    #connectCard{
+      display: none;
+      margin: 35px;
+    }
+
+
+
   
+  /*Styling lists*/
+  ul {
+    color: #333;
+}
+
+ul ::marker {
+    color:  #F9718D;
+}
+
+ul.b {
+  list-style-type: square;
+  display:inline-block;
+  padding-left: 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
