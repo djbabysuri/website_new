@@ -1,6 +1,6 @@
 # Queeri Data & Analytics Website Updates
 
-This is a  descriptive breakdown of the qD&A website update. The website is being transitioned from a Google sites template over to a custom design. These are the component parts as of 11/02/2020.
+This is a  descriptive breakdown of the qD&A website update. The website is being transitioned from a Google sites template over to a custom design. These are the component parts as of 11/05/2020.
 
 ## Current Components:
 
